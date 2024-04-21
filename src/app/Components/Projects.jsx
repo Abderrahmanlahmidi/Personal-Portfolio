@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="py-[74px] max-[640px]:py-[40px] space-y-[20px]" >
             <div className="flex justify-between items-end">
              <h2 className="font-[600] text-[32px] tracking-[-0.6px] text-[#ffff] max-[640px]:text-[24px]" >Projects</h2>
-                <a className="text-[20px] font-[500] text-[#BEDFFE] hover:underline hover:decoration-solid" href="https://github.com/Abderrahmanlahmidi">See all</a>
+                <a className="text-[20px] font-[500] text-[#BEDFFE] underline decoration-solid" href="https://github.com/Abderrahmanlahmidi">See all</a>
             </div>
             
             <div className="space-y-[40px]" >

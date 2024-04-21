@@ -4,10 +4,11 @@ import React from 'react'
 export default function Footer() {
 
     const handleOpenGmail = () => {
-        // Replace 'your_email@gmail.com' with your actual Gmail address
-        const email = 'Abderrahman2311pro@gmail.com';
+      
+        const email = 'lahmidiusa@gmail.com';
         const gmailUrl = `mailto:${email}`;
         window.open(gmailUrl);
+
       };
     
 
@@ -20,10 +21,10 @@ export default function Footer() {
         <button onClick={handleOpenGmail} className='w-[214px] h-[56px] font-[500] text-[22px]  max-[640px]:text-[18px] text-[#ffff] rounded bg-[#1055EA] hover:bg-[#0000EE] transition delay-60' >Say Hello</button>
 
         <div className=' space-x-[50px] max-[640px]:space-x-[30px] pt-[30px]' >
-            <a href='https://www.linkedin.com/in/abderrahmane-lahmidi/' className="hover:underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Linkedin</a>
-            <a href='https://twitter.com/Abderra47978756' className="hover:underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Twitter</a>
-            <a href='https://github.com/Abderrahmanlahmidi' className="hover:underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Github</a>
-            <a href='https://www.instagram.com/lahmidiabderrahman/' className="hover:underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Instagram</a>
+            <a href='https://www.linkedin.com/in/abderrahmane-lahmidi/' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Linkedin</a>
+            <a href='https://twitter.com/Abderra47978756' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Twitter</a>
+            <a href='https://github.com/Abderrahmanlahmidi' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Github</a>
+            <a href='https://www.instagram.com/lahmidiabderrahman/' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Instagram</a>
         </div>
      </div>
    </div>

@@ -15,7 +15,7 @@ const Certificates = () => {
         <div className="py-[74px] max-[640px]:py-[40px] space-y-[20px]" >
             <div className="flex justify-between items-end">
              <h2 className="font-[600] text-[32px] tracking-[-0.6px] text-[#ffff] max-[640px]:text-[24px]" >Certificates </h2>
-                <a className="text-[20px] font-[500] text-[#BEDFFE] hover:underline hover:decoration-solid" href="https://drive.google.com/drive/folders/1xdxhFtXf6W8Sfua8SZp0J1Rk45xsYkq1">See all</a>
+                <a className="text-[20px] font-[500] text-[#BEDFFE] underline decoration-solid" href="https://drive.google.com/drive/folders/1xdxhFtXf6W8Sfua8SZp0J1Rk45xsYkq1">See all</a>
             </div>
             <div className="grid gap-[24px] max-[640px]:grid-cols-2 grid-cols-3 max-[500px]:grid-cols-1 justify-center " >
                 <a href="https://www.coursera.org/account/accomplishments/verify/FERKX3V4GYBG"><Image src={Figma} /></a>
