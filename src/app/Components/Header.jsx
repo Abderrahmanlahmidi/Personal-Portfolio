@@ -3,7 +3,7 @@
 const header = () => {
 
     return (
-        <div className="px-[216px] max-[640px]:px-[16px] bg-[#04091B]">
+        <div id="home" className="px-[216px] max-[640px]:px-[16px] bg-[#04091B]">
          <div className=" py-[74px]" >
             <div className="flex ">
                 <div className="text-center space-y-[8px]" >
