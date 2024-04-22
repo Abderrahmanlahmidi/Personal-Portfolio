@@ -1,8 +1,12 @@
 "use client"
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import Image from 'next/image';
+import Close from "../Assets/Close.svg";
+
 
 const Menu = ({ isOpen, onClose }) => {
+
   const menuAnimation = useAnimation();
 
   // Define animations
@@ -36,29 +40,51 @@ const Menu = ({ isOpen, onClose }) => {
     }
   }, [isOpen]);
 
+
   return (
+
     <motion.div
-      className="fixed inset-0 bg-[#04091B] bg-opacity-75 flex justify-center items-start z-50"
+      className="fixed inset-0  bg-opacity-75 flex justify-center items-start z-50"
       initial={{ opacity: 0 }}
       animate={menuAnimation}
     >
       <motion.div
-        className="bg-white w-64 flex flex-col p-4"
+        className="bg-[#04091B] w-full h-full items-center  flex flex-col p-4"
         initial={{ y: '-100%' }}
         animate={menuAnimation}
       >
-        <button onClick={handleClose} className="self-end text-gray-700">
-          Close
+        <button onClick={handleClose} className=" p-[10px] rounded-[5px] border-[2px] border-[#D9EAFE]">
+          <Image src={Close} />
         </button>
-        <ul className="mt-8">
-          <li className="mb-4">
-            <a href="#" className="text-white">
-              Link 1
+        <ul className="mt-8 text-center space-y-[10px]">
+          <li>
+            <a onClick={onClose} href="#home" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+              home
             </a>
           </li>
-          <li className="mb-4">
-            <a href="#" className="text-white">
-              Link 2
+          <li>
+            <a onClick={onClose} href="#About" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+              About me
+            </a>
+          </li>
+          <li>
+            <a onClick={onClose} href="#Experience" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+              Experience
+            </a>
+          </li>
+          <li>
+            <a onClick={onClose} href="#Skills" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a onClick={onClose} href="#Certificates" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+              Certificates
+            </a>
+          </li>
+          <li>
+            <a onClick={onClose} href="#Projects" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+              Projects
             </a>
           </li>
           {/* Add more menu items as needed */}

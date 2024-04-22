@@ -11,7 +11,7 @@ const Certificates = () => {
 
     return (
   
-      <div className="px-[216px] max-[640px]:px-[16px] bg-[#04091B]">
+      <div id="Certificates" className="px-[216px] max-[640px]:px-[16px] bg-[#04091B]">
         <div className="py-[74px] max-[640px]:py-[40px] space-y-[20px]" >
             <div className="flex justify-between items-end">
              <h2 className="font-[600] text-[32px] tracking-[-0.6px] text-[#ffff] max-[640px]:text-[24px]" >Certificates </h2>
