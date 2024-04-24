@@ -44,7 +44,7 @@ const Menu = ({ isOpen, onClose }) => {
   return (
 
     <motion.div
-      className="fixed inset-0  bg-opacity-75 flex justify-center items-start z-50"
+      className="fixed inset-0  bg-opacity-75 hidden max-[640px]:flex justify-center items-start z-50"
       initial={{ opacity: 0 }}
       animate={menuAnimation}
     >
@@ -54,7 +54,7 @@ const Menu = ({ isOpen, onClose }) => {
         animate={menuAnimation}
       >
         <button onClick={handleClose} className=" p-[10px] rounded-[5px] border-[2px] border-[#D9EAFE]">
-          <Image src={Close} />
+          <Image src={Close} className='w-[18px]' />
         </button>
         <ul className="mt-8 text-center space-y-[10px]">
           <li>
