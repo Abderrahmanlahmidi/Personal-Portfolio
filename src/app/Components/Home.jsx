@@ -1,6 +1,6 @@
 "use client"
 
-const header = () => {
+const Home = () => {
 
     return (
         <div id="home" className="px-[216px] max-[640px]:px-[16px] bg-[#04091B]">
@@ -22,4 +22,4 @@ const header = () => {
 }
 
 
-export default header;
+export default Home;

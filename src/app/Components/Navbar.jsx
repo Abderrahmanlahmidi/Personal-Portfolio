@@ -5,8 +5,6 @@ import burger from "../Assets/burger.svg"
 import Menu from './Menu';
 
 
-
-
 function Navbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,17 +15,15 @@ function Navbar() {
     }
 
     const handleMenuToggle = () => {
-        setIsMenuOpen(!isMenuOpen);
+         setIsMenuOpen(!isMenuOpen);
       };
 
 
   return (
 
-
-
-    <div className='fixed w-full z-50 top-0' >
-    <nav className='bg-[#04091B] py-[20px] flex w-full items-center  justify-between  border-b-[1px] border-b-[#18264E] px-[216px]  max-[640px]:px-[16px]'>
-      <h3 className='text-[#fff] text-[24px]' >Lahmidi</h3>
+   <div className='fixed w-full z-50 top-0' >
+    <nav className='bg-[#04091B] py-[15px] flex w-full items-center  justify-between  border-b-[1px] border-b-[#18264E] px-[216px]  max-[640px]:px-[16px]'>
+      <a href='#home' className='text-[#fff] text-[24px]' > <span className='font-[600] text-[#bedffe] text-[24px] ' >L</span>ahmidi</a>
       <ul className='space-x-[25px] flex max-[640px]:hidden'>
         <li><a onClick={handleClick} className={`hover:text-[#bedffe] text-[#ffff] transition delay-75`} href="#home">home</a></li>
         <li><a onClick={handleClick} className={`hover:text-[#bedffe] text-[#ffff] transition delay-75`} href="#About">About me</a></li>
