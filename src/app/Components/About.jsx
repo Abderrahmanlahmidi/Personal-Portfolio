@@ -1,5 +1,4 @@
 
-
 const About = () => {
     return (
   
@@ -11,8 +10,6 @@ const About = () => {
         </div>
        <div className="h-[1px] w-full bg-[#18264E]"></div>
      </div>
-
-
 
 
     )
