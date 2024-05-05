@@ -1,13 +1,11 @@
-"use client"
-import { useEffect } from 'react';
+import {useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import Close from "../Assets/Close.svg";
 
-
 const Menu = ({ isOpen, onClose }) => {
-
   const menuAnimation = useAnimation();
+
 
   // Define animations
   const openAnimation = {
@@ -40,54 +38,51 @@ const Menu = ({ isOpen, onClose }) => {
     }
   }, [isOpen]);
 
-
   return (
-
     <motion.div
-      className="fixed inset-0  bg-opacity-75 hidden max-[640px]:flex justify-center items-start z-50"
+      className="fixed inset-0 bg-opacity-75 hidden max-[640px]:flex justify-center items-start z-50"
       initial={{ opacity: 0 }}
       animate={menuAnimation}
     >
       <motion.div
-        className="bg-[#04091B] w-full h-full items-center  flex flex-col p-4"
+        className="bg-[#04091B] w-full h-full items-center flex flex-col p-4"
         initial={{ y: '-100%' }}
         animate={menuAnimation}
       >
-        <button onClick={handleClose} className=" p-[10px] rounded-[5px] border-[2px] border-[#D9EAFE]">
+        <button onClick={handleClose} className="p-[10px] rounded-[5px] border-[2px] border-[#D9EAFE]">
           <Image src={Close} className='w-[18px]' />
         </button>
         <ul className="mt-8 text-center space-y-[10px]">
           <li>
-            <a onClick={onClose} href="#home" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
-              home
+            <a  onClick={onClose} href="#home" className={`hover:text-[#bedffe] text-[#ffff] transition delay-75`}>
+              Home
             </a>
           </li>
           <li>
-            <a onClick={onClose} href="#About" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+            <a  onClick={onClose} href="#About" className={`hover:text-[#bedffe] text-[#ffff] transition delay-75 `}>
               About me
             </a>
           </li>
           <li>
-            <a onClick={onClose} href="#Experience" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+            <a  onClick={onClose} href="#Experience" className={`hover:text-[#bedffe] text-[#ffff] transition delay-75 `}>
               Experience
             </a>
           </li>
           <li>
-            <a onClick={onClose} href="#Skills" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+            <a  onClick={onClose} href="#Skills" className={`hover:text-[#bedffe] text-[#ffff] transition delay-75 `}>
               Skills
             </a>
           </li>
           <li>
-            <a onClick={onClose} href="#Certificates" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+            <a onClick={onClose} href="#Certificates" className={`hover:text-[#bedffe] text-[#ffff] transition delay-75`}>
               Certificates
             </a>
           </li>
           <li>
-            <a onClick={onClose} href="#Projects" className="hover:text-[#bedffe] text-[#ffff] transition delay-75">
+            <a onClick={onClose} href="#Projects" className={`hover:text-[#bedffe] text-[#ffff] transition delay-75`}>
               Projects
             </a>
           </li>
-          {/* Add more menu items as needed */}
         </ul>
       </motion.div>
     </motion.div>
