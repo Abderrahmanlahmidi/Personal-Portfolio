@@ -24,7 +24,7 @@ export default function Footer() {
             <a href='https://www.linkedin.com/in/abderrahmane-lahmidi/' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Linkedin</a>
             <a href='https://twitter.com/Abderra47978756' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Twitter</a>
             <a href='https://github.com/Abderrahmanlahmidi' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Github</a>
-            <a href='https://www.instagram.com/lahmidiabderrahman/' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Instagram</a>
+            <a href='https://www.instagram.com/dvabderrahmane/' className="underline text-[20px] max-[640px]:text-[16px] font-[500] text-[#BEDFFE]">Instagram</a>
         </div>
      </div>
    </div>
